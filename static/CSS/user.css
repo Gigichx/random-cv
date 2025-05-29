@@ -15,7 +15,8 @@
 }
 
 .user-header {
-    background: linear-gradient(135deg, #ff6b6b, #ffa726);
+    background: linear-gradient(135deg, #C0C0C0, #007FFF);
+    /* background-color: #C0C0C0; */
     padding: 40px 20px;
     text-align: center;
     color: white;

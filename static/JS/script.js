@@ -191,3 +191,32 @@ function mostraErrore() {
                 </div>
             `;
 }
+
+// Variabile globale per memorizzare il nome dell'utente
+let nomeUtente = "";
+
+// Chiedi il nome al caricamento della pagina
+window.onload = function () {
+    let input = prompt("Inserisci il tuo nome:");
+
+    // Se è un numero, mostra errore e ricarica la pagina
+    if (!isNaN(input) && input !== null && input.trim() !== "") {
+        alert("Errore: Il nome non può essere un numero.");
+        location.reload();
+        return;
+    }
+
+    // Se è vuoto o solo spazi, imposta "USER"
+    if (!input || input.trim() === "") {
+        nomeUtente = "USER";
+    } else {
+        nomeUtente = input.trim();
+    }
+
+    // Inserisci il nome nel messaggio di benvenuto
+    const benvenutoDiv = document.getElementById("benvenuto");
+    benvenutoDiv.innerHTML = `
+      <h3>Benvenuto ${nomeUtente}!</h3>
+      <p>Clicca sul pulsante magico per generare il tuo primo utente casuale</p>
+    `;
+};
