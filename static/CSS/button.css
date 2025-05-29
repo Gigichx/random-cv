@@ -1,0 +1,22 @@
+.btn-genera {
+    background: linear-gradient(135deg, #6a93fb, #0835ff);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-genera:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #6a93fb, #0835ff);
+}
+
+.btn-genera:active {
+    transform: translateY(0);
+}
